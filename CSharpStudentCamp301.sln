@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudentCamp301.EntityLayer", "CSharpStudentCamp301.EntityLayer\CSharpStudentCamp301.EntityLayer.csproj", "{D96D163A-AFA9-4A24-9337-2BF168AE8E83}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudentCamp301.BusinessLayer", "CSharpStudentCamp301.BusinessLayer\CSharpStudentCamp301.BusinessLayer.csproj", "{5446BBAD-5135-4F21-B129-6D36CB7176A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudentCamp301.PresentationLayer", "CSharpStudentCamp301.PresentationLayer\CSharpStudentCamp301.PresentationLayer.csproj", "{AEE39BFE-EA7A-4421-A6F0-FC1445FF7CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpStudentCamp301.EFProject", "CSharpStudentCamp301.EFProject\CSharpStudentCamp301.EFProject.csproj", "{2A73BD00-550F-4B83-BFD5-B5328514024C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AEE39BFE-EA7A-4421-A6F0-FC1445FF7CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEE39BFE-EA7A-4421-A6F0-FC1445FF7CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEE39BFE-EA7A-4421-A6F0-FC1445FF7CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A73BD00-550F-4B83-BFD5-B5328514024C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A73BD00-550F-4B83-BFD5-B5328514024C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A73BD00-550F-4B83-BFD5-B5328514024C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A73BD00-550F-4B83-BFD5-B5328514024C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
