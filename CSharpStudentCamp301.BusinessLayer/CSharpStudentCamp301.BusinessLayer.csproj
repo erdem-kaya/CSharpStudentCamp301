@@ -41,12 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IOrderService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpStudentCamp301.DataAccessLayer\CSharpStudentCamp301.DataAccessLayer.csproj">
       <Project>{35daeee1-9228-4f44-bbd6-5dde42a8d8d0}</Project>
       <Name>CSharpStudentCamp301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpStudentCamp301.EFProject\CSharpStudentCamp301.EFProject.csproj">
+      <Project>{2A73BD00-550F-4B83-BFD5-B5328514024C}</Project>
+      <Name>CSharpStudentCamp301.EFProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpStudentCamp301.EntityLayer\CSharpStudentCamp301.EntityLayer.csproj">
+      <Project>{D96D163A-AFA9-4A24-9337-2BF168AE8E83}</Project>
+      <Name>CSharpStudentCamp301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
