@@ -1,4 +1,5 @@
 ﻿using CSharpStudentCamp301.BusinessLayer.Abstract;
+using CSharpStudentCamp301.DataAccessLayer.Abstract;
 using CSharpStudentCamp301.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,26 +11,26 @@ namespace CSharpStudentCamp301.BusinessLayer.Concrete
 {
     public class CustomerManager : ICustomerService
     {
-        private readonly ICustomerService _customerService;
+        private readonly ICustomerDal _customerDal;
 
-        public CustomerManager(ICustomerService customerService)
+        public CustomerManager(ICustomerDal customerDal)
         {
-            _customerService = customerService;
+            _customerDal = customerDal;
         }
 
         public void TDelete(Customer entity)
         {
-            _customerService.TDelete(entity);
+            _customerDal.Delete(entity);
         }
 
         public List<Customer> TGetAll()
         {
-            return _customerService.TGetAll();
+            return _customerDal.GetAll();
         }
 
         public Customer TGetById(int id)
         {
-            return _customerService.TGetById(id);
+            return _customerDal.GetById(id);
         }
 
         public void TInsert(Customer entity)
@@ -40,7 +41,7 @@ namespace CSharpStudentCamp301.BusinessLayer.Concrete
                entity.CustomerSurname != "" &&
                entity.CustomerSurname.Length <= 30)
             {
-                _customerService.TInsert(entity);
+                _customerDal.Insert(entity);
             }
             else
             {
@@ -55,7 +56,7 @@ namespace CSharpStudentCamp301.BusinessLayer.Concrete
                 entity.CustomerCity != null &&
                 entity.CustomerCity.Length >= 3)
             {
-                _customerService.TUpdate(entity);
+                _customerDal.Update(entity);
             } else
             {
                 //throw new Exception("Customer City must be at least 3 characters");

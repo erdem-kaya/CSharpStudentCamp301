@@ -95,6 +95,14 @@
       <Project>{5446bbad-5135-4f21-b129-6d36cb7176a3}</Project>
       <Name>CSharpStudentCamp301.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CSharpStudentCamp301.DataAccessLayer\CSharpStudentCamp301.DataAccessLayer.csproj">
+      <Project>{35DAEEE1-9228-4F44-BBD6-5DDE42A8D8D0}</Project>
+      <Name>CSharpStudentCamp301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpStudentCamp301.EntityLayer\CSharpStudentCamp301.EntityLayer.csproj">
+      <Project>{D96D163A-AFA9-4A24-9337-2BF168AE8E83}</Project>
+      <Name>CSharpStudentCamp301.EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
